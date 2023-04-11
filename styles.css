@@ -380,7 +380,7 @@ button.switch {
 
 .showing {
     opacity: 1;
-    display: normal;
+    display: block;
     animation: appear 1s ease-in-out;
 }
 
