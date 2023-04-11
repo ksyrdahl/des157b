@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    console.log('reading js');
 
     const button = document.querySelector('button');
     const living = document.querySelector('#living');
