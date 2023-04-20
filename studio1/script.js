@@ -2,6 +2,8 @@
     'use strict';
 
     const fs = document.querySelector('.fa-expand');
+    const pause = document.querySelector('.fa-pause');
+    const play = document.querySelector('.fa-play');
     const restart = document.querySelector('.fa-arrow-rotate-right');
     const vid = document.querySelector('#myVideo');
     const line1 = document.querySelector('#line1');
@@ -13,7 +15,7 @@
 
     const intervalID = setInterval(checkTime, 1000);
 
-    const loading = document.querySelector('.fa-star-and-crescent');
+    const loading = document.querySelector('.fa-book-open-cover');
 
     myVideo.addEventListener('playing', function() {
         loading.style.display = 'none';
@@ -60,25 +62,57 @@
         else if (17 < myVideo.currentTime && myVideo.currentTime < 18) {
             vid.pause();
             restart.style.opacity = "100%";
+            vid.style.opacity = "50%";
             restart.addEventListener('click', function(){
                 location.reload();
+                restart.style.opacity = "0";
             })
         }
          else {
             line5.className = "hidden";
-            restart.style.opacity = "0%";
+            restart.style.opacity = "0";
          }
     }
 
     fs.addEventListener('click', function(){
         if (!document.fullscreenElement) {
             document.documentElement.requestFullscreen();
-            vid.style.left = "-10%";
+            vid.style.left = "-5%";
         } else {
             document.exitFullscreen();
             vid.style.left = "0%";
         }
     })
 
+
+    pause.addEventListener('click', function(){
+        play.style.display = "block";
+        play.style.opacity = "1";
+        pause.style.display = "none";
+        vid.pause();
+    })   
+
+    play.addEventListener('click', function(){
+        play.style.display = "none";
+        pause.style.display = "block";
+        vid.play();
+    })
+
+    document.addEventListener('mousemove', reportPos);
+
+            let prevLoc = 0;
+
+            function reportPos(event) {
+                const windowSize = window.innerWidth;
+                const percent2px = windowSize / 100;
+                const xPos = event.clientX;
+                const changeColor = Math.floor(xPos / percent2px);
+
+                if (changeColor !== prevLoc) {
+                    vid.style.filter = `grayscale(${changeColor}%)`;
+                    prevLoc = changeColor;
+                    console.log(prevLoc);
+                }
+            }
 
 })();

@@ -80,6 +80,7 @@ body {
     bottom: 52.5%;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
+    transform: scale(4);
 }
 
 #line4 {
@@ -114,31 +115,66 @@ body {
 
 .fa-expand:hover {
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+.fa-play {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.fa-pause:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.fa-pause {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.fa-play:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .fa-arrow-rotate-right {
     position: absolute;
     top: 50%;
-    right: 48%;
+    right: 47%;
     font-size: 56px;
-    color: rgb(255, 255, 255); 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.628);
+    border-radius: 50%;
+    color: rgb(68, 51, 119);
+    opacity: 0;
+    transition: all 0s;
 }
 
 .fa-arrow-rotate-right:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 
-.fa-star-and-crescent {
+.fa-book-open-cover {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 36px;
-    color: rgb(37, 15, 104);
+    color:rgb(68, 51, 119);
     transform: translate(-50%, 50%);
-    animation: moon 2s infinite alternate ease-in-out;
+    animation: book 2s infinite alternate ease-in-out;
 }
 
-@keyframes moon {
+@keyframes book {
     0% {
         opacity: .5;
         transform: scale(1.5);
