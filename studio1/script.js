@@ -17,6 +17,7 @@
 
     const loading = document.querySelector('.fa-book-open-cover');
 
+    // loading screen
     myVideo.addEventListener('playing', function() {
         loading.style.display = 'none';
     })
@@ -25,7 +26,7 @@
         console.log(parseInt(myVideo.currentTime));
 
 
-        
+        // brings int he different lines of text
         if (2 < myVideo.currentTime && myVideo.currentTime < 4) {
             line1.className = "showing";
         } else {
@@ -63,6 +64,7 @@
             vid.pause();
             restart.style.opacity = "100%";
             vid.style.opacity = "50%";
+            // adds restart function once video is done
             restart.addEventListener('click', function(){
                 location.reload();
                 restart.style.opacity = "0";
@@ -74,6 +76,7 @@
          }
     }
 
+    // changes video to fullscreen
     fs.addEventListener('click', function(){
         if (!document.fullscreenElement) {
             document.documentElement.requestFullscreen();
@@ -84,7 +87,7 @@
         }
     })
 
-
+    // pauses video on click
     pause.addEventListener('click', function(){
         play.style.display = "block";
         play.style.opacity = "1";
@@ -92,12 +95,14 @@
         vid.pause();
     })   
 
+    // plays video on click
     play.addEventListener('click', function(){
         play.style.display = "none";
         pause.style.display = "block";
         vid.play();
     })
 
+    // Changes the video from color to black & white based on the mouse position on X axis.
     document.addEventListener('mousemove', reportPos);
 
             let prevLoc = 0;
