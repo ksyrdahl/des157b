@@ -1,0 +1,42 @@
+{
+    "point1" : {
+        "day" : "Sunday",
+        "tea" : "Iced Jasmine Pearl tea",
+        "reason" : "it was new"
+    },
+    "point2" : {
+        "day" : "Monday",
+        "tea" : "Hot Genmaicha tea",
+        "reason" : "I was cold"
+    },
+    "point3" : {
+        "day" : "Tuesday",
+        "tea" : "No Tea",
+        "reason" : "had lots of energy"
+    },
+    "point4" : {
+        "day" : "Wednesday",
+        "tea" : "3 cups of Hot Thai Tea",
+        "reason" : "I was exhausted"
+    },
+    "point5" : {
+        "day" : "Thursday",
+        "tea" : "Hot Matcha Latte",
+        "reason" : "I had a late class"
+    },
+    "point6" : {
+        "day" : "Friday",
+        "tea" : "Iced Jasime Peral Tea",
+        "reason" : "I was craving it"
+    },
+    "point7" : {
+        "day" : "Saturday",
+        "tea" : "Matcha Ice-cream",
+        "reason" : "it's my favorite flavor"
+    },
+    "point8" : {
+        "day" : "Sunday",
+        "tea" : "Ginger Wellness Tea",
+        "reason" : "I had an allergy attack"
+    }
+}
