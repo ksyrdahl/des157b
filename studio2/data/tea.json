@@ -1,42 +1,58 @@
 {
-    "point1" : {
+    "4/16" : {
         "day" : "Sunday",
-        "tea" : "Iced Jasmine Pearl tea",
-        "reason" : "it was new"
+        "date" : "16",
+        "tea" : "Jasmine Pearl Tea",
+        "reason" : "it was new",
+        "images" : ["images/jasmine.svg"]
     },
-    "point2" : {
+    "4/17" : {
         "day" : "Monday",
-        "tea" : "Hot Genmaicha tea",
-        "reason" : "I was cold"
+        "date" : "17",
+        "tea" : "Genmaicha Tea",
+        "reason" : "I was cold",
+        "images" : ["images/rice.svg"]
     },
-    "point3" : {
+    "4/18" : {
         "day" : "Tuesday",
+        "date" : "18",
         "tea" : "No Tea",
-        "reason" : "had lots of energy"
+        "reason" : "had lots of energy",
+        "images" : ["images/no.svg"]
     },
-    "point4" : {
+    "4/19" : {
         "day" : "Wednesday",
-        "tea" : "3 cups of Hot Thai Tea",
-        "reason" : "I was exhausted"
+        "date" : "19",
+        "tea" : "Thai Tea",
+        "reason" : "I was exhausted",
+        "images" : ["images/anaise.svg"]
     },
-    "point5" : {
+    "4/20" : {
         "day" : "Thursday",
-        "tea" : "Hot Matcha Latte",
-        "reason" : "I had a late class"
+        "date" : "20",
+        "tea" : "Matcha Latte",
+        "reason" : "I had a late class",
+        "images" : ["images/matcha.svg"]
     },
-    "point6" : {
+    "4/21" : {
         "day" : "Friday",
-        "tea" : "Iced Jasime Peral Tea",
-        "reason" : "I was craving it"
+        "date" : "21",
+        "tea" : "Jasime Peral Tea",
+        "reason" : "I was craving it",
+        "images" : ["images/jasmine.svg"]
     },
-    "point7" : {
+    "4/22" : {
         "day" : "Saturday",
+        "date" : "22",
         "tea" : "Matcha Ice-cream",
-        "reason" : "it's my favorite flavor"
+        "reason" : "it's my favorite flavor",
+        "images" : ["images/mochi.svg"]
     },
-    "point8" : {
+    "4/23" : {
         "day" : "Sunday",
-        "tea" : "Ginger Wellness Tea",
-        "reason" : "I had an allergy attack"
+        "date" : "23",
+        "tea" : "Ginger Tea",
+        "reason" : "I had an allergy attack",
+        "images" : ["images/ginger.svg"]
     }
 }
