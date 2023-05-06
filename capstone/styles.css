@@ -9,6 +9,14 @@ body {
     color: white;
 }
 
+#flex2{
+    width: 1060px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
 #container {
     display: flex;
     position: absolute;
@@ -129,4 +137,30 @@ a {
     background: rgba(255, 255, 255, 0.165);
     padding: 20px;
     border-radius: 10px;
+}
+
+#comp2 {
+    color: rgb(255, 219, 180);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.165);
+    padding: 20px;
+    border-radius: 10px;
+    height: 240px;
+    line-height: 120px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.citation {
+    font-size: 1.11em;
+    line-height: 2em;
+}
+
+#annotated {
+    background: rgb(105,80,203);
+    background: linear-gradient(174deg, rgba(105,80,203,1) 11%, rgba(58,36,146,1) 40%, rgba(9,8,62,1) 100%);
+    width: 100vw;
+    height: 250vh;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
 }
