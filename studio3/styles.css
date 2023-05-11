@@ -1,0 +1,307 @@
+body{
+    background: #FFD4AC;
+    width: 1200px;
+    height: 750px;
+}
+
+main {
+    display: flex;
+}
+
+
+header h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: #F8BF8B;
+    text-shadow: -1px 3px 2px rgba(173,112,55,0.6);
+    font-size: 128px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header h2 {
+    font-family: 'Sacramento', cursive;
+    color: #AD7037;
+    font-size: 96px;
+    font-weight: 100;
+    padding-top: 30px;
+    margin: 0;
+}
+
+#title {
+    display: flex;
+}
+
+#container {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#us {
+    width: 800px;
+    height: 500px;
+    background: black;
+}
+
+img {
+    width: 800px;
+    height: 500px; 
+}
+
+#statemap {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 24px;
+    color: #f2bc90;
+    width: 813px;
+    height: 503px;
+    position: relative;
+    text-shadow: -1px 3px 2px rgba(173,112,55,0.6);
+}
+
+#statemap p {
+    position: absolute;
+}
+
+/* position for all of the states initials */
+
+#ca {
+    top: 200px;
+    left: 30px;
+}
+
+#nv {
+    top: 170px;
+    left: 90px; 
+}
+
+#or {
+    top: 70px;
+    left: 60px; 
+}
+
+#az {
+    top: 280px;
+    left: 150px; 
+}
+
+#ut {
+    top: 190px;
+    left: 165px; 
+}
+
+#wa {
+    top: 10px;
+    left: 70px; 
+}
+
+#id {
+    top: 100px;
+    left: 150px; 
+}
+
+#mt {
+    top: 50px;
+    left: 220px; 
+}
+
+#wy {
+    top: 120px;
+    left: 230px; 
+}
+
+#co {
+    top: 200px;
+    left: 250px; 
+}
+
+#nm {
+    top: 290px;
+    left: 230px; 
+}
+
+#tx {
+    top: 350px;
+    left: 350px; 
+}
+
+#ok {
+    top: 275px;
+    left: 370px; 
+}
+
+#ks {
+    top: 220px;
+    left: 360px; 
+}
+
+#ne {
+    top: 160px;
+    left: 350px; 
+}
+
+#sd {
+    top: 100px;
+    left: 340px; 
+}
+
+#nd {
+    top: 45px;
+    left: 335px; 
+}
+
+#la {
+    top: 360px;
+    left: 455px; 
+}
+
+#ar {
+    top: 290px;
+    left: 450px; 
+}
+
+#mo {
+    top: 230px;
+    left: 450px; 
+}
+
+#ia {
+    top: 150px;
+    left: 430px; 
+}
+
+#mn {
+    top: 80px;
+    left: 410px; 
+}
+
+#ms {
+    top: 330px;
+    left: 495px; 
+}
+
+#al {
+    top: 330px;
+    left: 545px; 
+}
+
+#fl {
+    top: 400px;
+    left: 645px; 
+}
+
+#ga {
+    top: 330px;
+    left: 600px; 
+}
+
+#sc {
+    top: 290px;
+    left: 640px; 
+}
+
+#tn {
+    top: 265px;
+    left: 540px; 
+}
+
+#nc {
+    top: 255px;
+    left: 660px; 
+}
+
+#wi {
+    top: 100px;
+    left: 480px; 
+}
+
+#il {
+    top: 180px;
+    left: 500px; 
+}
+
+#in {
+    top: 180px;
+    left: 540px; 
+}
+
+#ky {
+    top: 230px;
+    left: 560px; 
+}
+
+#va {
+    top: 215px;
+    left: 665px; 
+}
+
+#mi {
+    top: 120px;
+    left: 550px; 
+}
+
+#oh {
+    top: 170px;
+    left: 590px; 
+}
+
+#wv {
+    top: 200px;
+    left: 615px; 
+}
+
+#md {
+    top: 180px;
+    left: 665px; 
+}
+
+#de {
+    top: 180px;
+    left: 730px; 
+}
+
+#pa {
+    top: 150px;
+    left: 660px; 
+}
+
+#nj {
+    top: 150px;
+    left: 710px; 
+}
+
+#ny {
+    top: 100px;
+    left: 690px; 
+}
+
+#me {
+    top: 40px;
+    left: 755px; 
+}
+
+#ct {
+    top: 120px;
+    left: 725px; 
+}
+
+#ri {
+    top: 130px;
+    left: 755px; 
+}
+
+#vt {
+    top: 60px;
+    left: 710px; 
+}
+
+#nh {
+    top: 80px;
+    left: 730px; 
+}
+
+#ma {
+    top: 100px;
+    left: 750px; 
+}
