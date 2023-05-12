@@ -8,6 +8,23 @@ main {
     display: flex;
 }
 
+header {
+    display: flex;
+    gap: 220px;
+}
+
+#search {
+    width: 300px;
+    align-self: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 
 header h1{
     font-family: 'Luckiest Guy', cursive;
@@ -16,6 +33,7 @@ header h1{
     font-size: 128px;
     text-transform: uppercase;
     margin: 0;
+    font-weight: 300;
 }
 
 header h2 {
@@ -48,6 +66,36 @@ header h2 {
 img {
     width: 800px;
     height: 500px; 
+}
+
+#images {
+    background: black;
+    height: 400px;
+    width: 200px;
+    margin: auto;
+}
+
+#text {
+    display: flex;
+}
+
+#text h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #F8BF8B;
+    text-shadow: -1px 3px 2px rgba(173,112,55,0.6);
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;  
+}
+
+#text h2 {
+    font-family: 'Sacramento', cursive;
+    color: #AD7037;
+    font-size:70px;
+    font-weight: 100;
+    padding-top: 30px;
+    margin: 0;
 }
 
 #statemap {
