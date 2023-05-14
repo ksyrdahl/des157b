@@ -19,11 +19,13 @@ header {
 }
 
 .hidden {
-    display: none;
+    /* display: none; */
+    z-index: -1;
 }
 
 .show {
-    display: block;
+    /* display: block; */
+    z-index: 1;
 }
 
 header h1{

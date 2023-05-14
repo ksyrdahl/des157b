@@ -17,6 +17,10 @@ body {
     gap: 50px;
 }
 
+#interviews #flex2 {
+    gap: 20px;
+}
+
 #container {
     display: flex;
     position: absolute;
@@ -180,4 +184,47 @@ a {
     height: 250vh;
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
+}
+
+#interviews {
+    height: 140vh;
+}
+
+#interviews h2 {
+    letter-spacing: .2em;
+    padding-left: 1em;
+}
+
+li {
+    font-weight: 100;
+    width: 500px;
+    line-height: 1.5em;
+}
+
+#target {
+    display: flex;
+    gap: 20px;
+}
+
+#target p {
+    width: 330px;
+}
+
+#people p {
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: right;
+    line-height: .6em;
+}
+
+#thinline {
+    width: 10px;
+    height: 1000px;
+    border-right: 3px solid rgba(255, 255, 255, 0.657);
+}
+
+#sum p {
+    padding-left: 1.5em;
 }
