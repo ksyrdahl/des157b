@@ -228,3 +228,7 @@ li {
 #sum p {
     padding-left: 1.5em;
 }
+
+#mood h1{
+    letter-spacing: .05em;
+}
