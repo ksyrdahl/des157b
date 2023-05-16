@@ -232,3 +232,26 @@ li {
 #mood h1{
     letter-spacing: .05em;
 }
+
+#tech p {
+    padding-left: 1.5em; 
+}
+
+#report {
+    height: 120vh;
+}
+
+#report h1{
+    font-size: 90px;
+    text-align: center;
+}
+
+#thinline2 {
+    width: 10px;
+    height: 700px;
+    border-right: 3px solid rgba(255, 255, 255, 0.657);
+}
+
+h3{
+    text-transform: uppercase;
+}
