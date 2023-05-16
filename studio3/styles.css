@@ -1,11 +1,18 @@
 body{
-    background: #FFD4AC;
+    background: #79a8fa;
     width: 1200px;
     height: 750px;
 }
 
-main {
-    display: flex;
+#direct {
+    font-family: 'Amatic SC', cursive;
+    color: #2c5fb7;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0; 
+    position: absolute;
+    top: 115px;
+    left: 50px;
 }
 
 header {
@@ -15,35 +22,46 @@ header {
 
 #search {
     width: 300px;
+    border-radius: 25px;
+    background: white;
+    height: 130px;
     align-self: center;
 }
 
+#search p{
+    padding-left: 30px;
+    margin-bottom: 50px;
+    font-family: 'Amatic SC', cursive;
+    color: #2c5fb7;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0; 
+}
+
 .hidden {
-    /* display: none; */
-    z-index: -1;
+    display: none;
 }
 
 .show {
-    /* display: block; */
-    z-index: 1;
+    display: block;
 }
 
 header h1{
     font-family: 'Luckiest Guy', cursive;
-    color: #F8BF8B;
-    text-shadow: -1px 3px 2px rgba(173,112,55,0.6);
+    color: #2c5fb7;
+    text-shadow: -1px 3px 2px #2c5fb766;
     font-size: 128px;
     text-transform: uppercase;
+    padding-top: 10px;
     margin: 0;
     font-weight: 300;
 }
 
 header h2 {
-    font-family: 'Sacramento', cursive;
-    color: #AD7037;
-    font-size: 96px;
+    font-family: 'Amatic SC', cursive;
+    color: #2c5fb7;
+    font-size: 120px;
     font-weight: 100;
-    padding-top: 30px;
     margin: 0;
 }
 
@@ -70,40 +88,64 @@ img {
     height: 500px; 
 }
 
-#images {
-    background: black;
-    height: 400px;
-    width: 200px;
-    margin: auto;
+#flexy{
+    display: flex;
+    margin-top: 30px;
 }
 
-#text {
-    display: flex;
+button{
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    background: #fefefdc3;
+    color:  #2c5fb7;
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+}
+
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#text{
+    align-self: flex-end;
+    width: 470px;
+    padding-bottom: 100px;
+}
+
+#comp {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 170px;
+    right: 80px;
+    opacity: .8;
 }
 
 #text h1 {
-    font-family: 'Luckiest Guy', cursive;
-    color: #F8BF8B;
-    text-shadow: -1px 3px 2px rgba(173,112,55,0.6);
-    font-size: 100px;
-    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    color: #2c5fb7;
+    font-size: 50px;
     font-weight: 100;
-    margin: 0;  
+    margin: 0;   
 }
 
 #text h2 {
-    font-family: 'Sacramento', cursive;
-    color: #AD7037;
-    font-size:70px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #2c5fb7;
+    text-shadow: -1px 3px 2px #2c5fb766;
+    font-size: 60px;
+    text-transform: uppercase;
     font-weight: 100;
-    padding-top: 30px;
-    margin: 0;
+    margin: 0; 
 }
 
 #statemap {
     font-family: 'Luckiest Guy', cursive;
     font-size: 24px;
-    color: #f2bc90;
+    color: #f7d5b9;
     width: 813px;
     height: 503px;
     position: relative;
