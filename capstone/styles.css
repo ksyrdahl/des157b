@@ -255,3 +255,18 @@ li {
 h3{
     text-transform: uppercase;
 }
+
+#wire{
+    align-content: center;
+    height: 260vh;
+    text-align: center;
+}
+
+#wire div {
+    width: 1260px;
+    margin: auto;
+}
+#wire img{
+    border: 0px;
+    margin-bottom: 50px;
+}
