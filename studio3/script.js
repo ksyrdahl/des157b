@@ -2,14 +2,29 @@
     'use strict';
     console.log('reading js');
 
-    document.querySelector('button').addEventListener("click", function(){
-        location.reload();
-    });
+    const states = document.querySelectorAll('#statemap p');
+    const areas = document.querySelectorAll('#statemap area');
+
+    // document.querySelector('button').addEventListener("click", function(){
+    //     location.reload();
+    // });
+
+    // for (let i=0; i<areas.length; i++){
+    //     areas[i].addEventListener('mouseenter', function(){
+    //         for (let j=0; j<states.length; j++){
+    //             states[j].className ='hidden';
+    //         }
+    //     })
+    // }
+
 
     //CA code
         document.querySelector('#ca2').addEventListener('mouseover', showstate);
         
         function showstate(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ca').className ='showing';
             document.querySelector('#text h2').innerHTML = "California";
         }
@@ -29,7 +44,7 @@
 
         function hidestate(){
             // console.log('hide state')
-            // document.querySelector('#ca').className ='hidden';
+            document.querySelector('#ca').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
 
@@ -37,6 +52,9 @@
         document.querySelector('#nv2').addEventListener('mouseover', showstate2);
             
         function showstate2(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#nv').className ='showing';
             document.querySelector('#text h2').innerHTML = "Nevada";
         }
@@ -54,7 +72,7 @@
         })
 
         function hidestate2(){
-            // document.querySelector('#nv').className ='hidden';
+            document.querySelector('#nv').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     
@@ -62,6 +80,9 @@
         document.querySelector('#or2').addEventListener('mouseover', showstate3);
                 
         function showstate3(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#or').className ='showing';
             document.querySelector('#text h2').innerHTML = "Oregon";
         }
@@ -79,7 +100,7 @@
         })
 
         function hidestate3(){
-            // document.querySelector('#or').className ='hidden';
+            document.querySelector('#or').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     
@@ -87,6 +108,9 @@
         document.querySelector('#az2').addEventListener('mouseover', showstate4);
                     
         function showstate4(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#az').className ='showing';
             document.querySelector('#text h2').innerHTML = "Arizona";
         }
@@ -104,7 +128,7 @@
         })
 
         function hidestate4(){
-            // document.querySelector('#az').className ='hidden';
+            document.querySelector('#az').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
 
@@ -112,6 +136,9 @@
         document.querySelector('#ut2').addEventListener('mouseover', showstate5);
                         
         function showstate5(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ut').className ='showing';
             document.querySelector('#text h2').innerHTML = "Utah";
         }
@@ -129,13 +156,16 @@
         })
 
         function hidestate5(){
-            // document.querySelector('#ut').className ='hidden';
+            document.querySelector('#ut').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     // WA code
         document.querySelector('#wa2').addEventListener('mouseover', showstate6);
                             
         function showstate6(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#wa').className ='showing';
             document.querySelector('#text h2').innerHTML = "Washington";
         }
@@ -153,13 +183,16 @@
         })
 
         function hidestate6(){
-            // document.querySelector('#wa').className ='hidden';
+            document.querySelector('#wa').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     // ID code
         document.querySelector('#id2').addEventListener('mouseover', showstate7);
                                 
         function showstate7(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#id').className ='showing';
             document.querySelector('#text h2').innerHTML = "Idaho";
         }
@@ -177,13 +210,16 @@
         })
 
         function hidestate7(){
-            // document.querySelector('#id').className ='hidden';
+            document.querySelector('#id').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     // MT code
         document.querySelector('#mt2').addEventListener('mouseover', showstate8);
                                     
         function showstate8(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#mt').className ='showing';
             document.querySelector('#text h2').innerHTML = "Montana";
         }
@@ -201,13 +237,16 @@
         })
 
         function hidestate8(){
-            // document.querySelector('#mt').className ='hidden';
+            document.querySelector('#mt').className ='hidden';
             document.querySelector('#text h2').innerHTML = "Pick a State";
         }
     // WY code
         document.querySelector('#wy2').addEventListener('mouseover', showstate9);
                                         
         function showstate9(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#wy').className ='showing';
             document.querySelector('#text h2').innerHTML = "Wyoming";
         }
@@ -232,6 +271,9 @@
         document.querySelector('#co2').addEventListener('mouseover', showstate10);
                                             
         function showstate10(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#co').className ='showing';
             document.querySelector('#text h2').innerHTML = "Colorado";
         }
@@ -256,6 +298,9 @@
         document.querySelector('#nm2').addEventListener('mouseover', showstate11);
                                                 
         function showstate11(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#nm').className ='showing';
             document.querySelector('#text h2').innerHTML = "New Mexico";
         }
@@ -280,6 +325,9 @@
         document.querySelector('#tx2').addEventListener('mouseover', showstate12);
                                                     
         function showstate12(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#tx').className ='showing';
             document.querySelector('#text h2').innerHTML = "Texas";
         }
@@ -304,6 +352,9 @@
         document.querySelector('#ok2').addEventListener('mouseover', showstate13);
                                                         
         function showstate13(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ok').className ='showing';
             document.querySelector('#text h2').innerHTML = "Oklahoma";
         }
@@ -328,6 +379,9 @@
         document.querySelector('#ks2').addEventListener('mouseover', showstate14);
                                                             
         function showstate14(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ks').className ='showing';
             document.querySelector('#text h2').innerHTML = "Kansas";
         }
@@ -352,6 +406,9 @@
         document.querySelector('#ne2').addEventListener('mouseover', showstate15);
                                                                 
         function showstate15(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ne').className ='showing';
             document.querySelector('#text h2').innerHTML = "Nebraska";
         }
@@ -376,6 +433,9 @@
         document.querySelector('#sd2').addEventListener('mouseover', showstate16);
                                                                     
         function showstate16(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#sd').className ='showing';
             document.querySelector('#text h2').innerHTML = "South Dakota";
         }
@@ -400,6 +460,9 @@
         document.querySelector('#nd2').addEventListener('mouseover', showstate17);
                                                                     
         function showstate17(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#nd').className ='showing';
             document.querySelector('#text h2').innerHTML = "North Dakota";
         }
@@ -424,6 +487,9 @@
         document.querySelector('#la2').addEventListener('mouseover', showstate18);
                                                                         
         function showstate18(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#la').className ='showing';
             document.querySelector('#text h2').innerHTML = "Lousiana";
         }
@@ -448,6 +514,9 @@
         document.querySelector('#ar2').addEventListener('mouseover', showstate19);
                                                                         
         function showstate19(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ar').className ='showing';
             document.querySelector('#text h2').innerHTML = "Arkansas";
         }
@@ -472,6 +541,9 @@
         document.querySelector('#mo2').addEventListener('mouseover', showstate20);
                                                                         
         function showstate20(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#mo').className ='showing';
             document.querySelector('#text h2').innerHTML = "Missouri";
         }
@@ -496,6 +568,9 @@
         document.querySelector('#ia2').addEventListener('mouseover', showstate21);
                                                                         
         function showstate21(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ia').className ='showing';
             document.querySelector('#text h2').innerHTML = "Iowa";
         }
@@ -520,6 +595,9 @@
         document.querySelector('#mn2').addEventListener('mouseover', showstate22);
                                                                         
         function showstate22(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#mn').className ='showing';
             document.querySelector('#text h2').innerHTML = "Minnesota";
         }
@@ -544,6 +622,9 @@
         document.querySelector('#ms2').addEventListener('mouseover', showstate23);
                                                                         
         function showstate23(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ms').className ='showing';
             document.querySelector('#text h2').innerHTML = "Mississippi";
         }
@@ -568,6 +649,9 @@
         document.querySelector('#al2').addEventListener('mouseover', showstate24);
                                                                         
         function showstate24(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#al').className ='showing';
             document.querySelector('#text h2').innerHTML = "Alabama";
         }
@@ -592,6 +676,9 @@
         document.querySelector('#fl2').addEventListener('mouseover', showstate25);
                                                                         
         function showstate25(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#fl').className ='showing';
             document.querySelector('#text h2').innerHTML = "Florida";
         }
@@ -616,6 +703,9 @@
         document.querySelector('#ga2').addEventListener('mouseover', showstate26);
                                                                         
         function showstate26(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ga').className ='showing';
             document.querySelector('#text h2').innerHTML = "Georgia";
         }
@@ -640,6 +730,9 @@
         document.querySelector('#sc2').addEventListener('mouseover', showstate27);
                                                                         
         function showstate27(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#sc').className ='showing';
             document.querySelector('#text h2').innerHTML = "South Carolina";
         }
@@ -664,6 +757,9 @@
         document.querySelector('#tn2').addEventListener('mouseover', showstate28);
                                                                         
         function showstate28(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#tn').className ='showing';
             document.querySelector('#text h2').innerHTML = "Tennesse";
         }
@@ -688,6 +784,9 @@
         document.querySelector('#nc2').addEventListener('mouseover', showstate29);
                                                                         
         function showstate29(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#nc').className ='showing';
             document.querySelector('#text h2').innerHTML = "North Carolina";
         }
@@ -712,6 +811,9 @@
         document.querySelector('#wi2').addEventListener('mouseover', showstate30);
                                                                             
         function showstate30(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#wi').className ='showing';
             document.querySelector('#text h2').innerHTML = "Wisconsin";
         }
@@ -736,6 +838,9 @@
         document.querySelector('#il2').addEventListener('mouseover', showstate31);
                                                                             
         function showstate31(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#il').className ='showing';
             document.querySelector('#text h2').innerHTML = "Illinois";
         }
@@ -760,6 +865,9 @@
         document.querySelector('#in2').addEventListener('mouseover', showstate32);
                                                                                 
         function showstate32(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#in').className ='showing';
             document.querySelector('#text h2').innerHTML = "Indiana";
         }
@@ -784,6 +892,9 @@
         document.querySelector('#ky2').addEventListener('mouseover', showstate33);
                                                                                     
         function showstate33(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ky').className ='showing';
             document.querySelector('#text h2').innerHTML = "Kentucky";
         }
@@ -808,6 +919,9 @@
         document.querySelector('#va2').addEventListener('mouseover', showstate34);
                                                                                     
         function showstate34(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#va').className ='showing';
             document.querySelector('#text h2').innerHTML = "Virginia";
         }
@@ -832,6 +946,9 @@
         document.querySelector('#mi2').addEventListener('mouseover', showstate35);
                                                                                     
         function showstate35(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#mi').className ='showing';
             document.querySelector('#text h2').innerHTML = "Michigan";
         }
@@ -856,6 +973,9 @@
         document.querySelector('#oh2').addEventListener('mouseover', showstate36);
                                                                                         
         function showstate36(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#oh').className ='showing';
             document.querySelector('#text h2').innerHTML = "Ohio";
         }
@@ -880,6 +1000,9 @@
         document.querySelector('#wv2').addEventListener('mouseover', showstate37);
                                                                                         
         function showstate37(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#wv').className ='showing';
             document.querySelector('#text h2').innerHTML = "West Virginia";
         }
@@ -904,6 +1027,9 @@
         document.querySelector('#md2').addEventListener('mouseover', showstate38);
                                                                                         
         function showstate38(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#md').className ='showing';
             document.querySelector('#text h2').innerHTML = "Maryland";
         }
@@ -928,6 +1054,9 @@
         document.querySelector('#de2').addEventListener('mouseover', showstate39);
                                                                                         
         function showstate39(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#de').className ='showing';
             document.querySelector('#text h2').innerHTML = "Delaware";
         }
@@ -952,6 +1081,9 @@
         document.querySelector('#pa2').addEventListener('mouseover', showstate40);
                                                                                         
         function showstate40(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#pa').className ='showing';
             document.querySelector('#text h2').innerHTML = "Pennsylvania";
         }
@@ -976,6 +1108,9 @@
         document.querySelector('#nj2').addEventListener('mouseover', showstate41);
                                                                                         
         function showstate41(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#nj').className ='showing';
             document.querySelector('#text h2').innerHTML = "New Jersey";
         }
@@ -1000,6 +1135,9 @@
         document.querySelector('#ny2').addEventListener('mouseover', showstate42);
                                                                                         
         function showstate42(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ny').className ='showing';
             document.querySelector('#text h2').innerHTML = "New York";
         }
@@ -1024,6 +1162,9 @@
         document.querySelector('#me2').addEventListener('mouseover', showstate43);
                                                                                             
         function showstate43(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#me').className ='showing';
             document.querySelector('#text h2').innerHTML = "Maine";
         }
@@ -1048,6 +1189,9 @@
         document.querySelector('#ct2').addEventListener('mouseover', showstate44);
                                                                                             
         function showstate44(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ct').className ='showing';
             document.querySelector('#text h2').innerHTML = "Connecticut";
         }
@@ -1072,6 +1216,9 @@
         document.querySelector('#ri2').addEventListener('mouseover', showstate45);
                                                                                             
         function showstate45(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
             document.querySelector('#ri').className ='showing';
             document.querySelector('#text h2').innerHTML = "Rhode Island";
         }
@@ -1096,6 +1243,9 @@
          document.querySelector('#vt2').addEventListener('mouseover', showstate46);
                                                                                             
          function showstate46(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
              document.querySelector('#vt').className ='showing';
              document.querySelector('#text h2').innerHTML = "Vermont";
          }
@@ -1120,6 +1270,9 @@
          document.querySelector('#nh2').addEventListener('mouseover', showstate47);
                                                                                             
          function showstate47(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
              document.querySelector('#nh').className ='showing';
              document.querySelector('#text h2').innerHTML = "New Hampshire";
          }
@@ -1144,6 +1297,9 @@
          document.querySelector('#ma2').addEventListener('mouseover', showstate48);
                                                                                             
          function showstate48(){
+            for (let j=0; j<states.length; j++){
+                states[j].className ='hidden';
+            }
              document.querySelector('#ma').className ='showing';
              document.querySelector('#text h2').innerHTML = "Massachusetts";
          }
