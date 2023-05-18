@@ -270,3 +270,18 @@ h3{
     border: 0px;
     margin-bottom: 50px;
 }
+
+#sketches img {
+    border-radius: 25px;
+}
+
+#sketches div {
+    display: flex;
+    gap: 5em;
+    margin: auto;
+    width: 1000px;
+}
+
+#sketches {
+    text-align: center;
+}
