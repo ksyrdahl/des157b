@@ -1,0 +1,279 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* search bar in footer css */
+#searchline{
+    background: #071872;
+    background: linear-gradient(175deg, rgba(4,12,55,1) 0%, rgba(7,24,114,1) 49%);
+    width: 25%;
+    height: 3px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 25px;
+}
+
+#searchscreen {
+    box-sizing: border-box;
+    position: fixed;
+    padding: 20px;
+    padding-top: 10px;
+    background: #283A9A;
+    background: linear-gradient(35deg, rgb(14, 28, 96) 0%, rgba(40,58,154,1) 85%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px #727272;
+}
+
+#searchscreen form {
+    display: block;
+    width: 80%;
+    height: 29px;
+    margin: auto;
+    color: #DAE0FF;
+    background: #6F81DE;
+    background: linear-gradient(162deg, rgba(52,72,177,1) 0%, rgba(111,129,222,1) 49%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    box-shadow: inset 0px 12px 5px -7px rgba(0,0,0,0.38);
+}
+
+form label {
+    font-size: 22px;
+    position: relative;
+    top: 3px;
+    padding-left: 15px;
+    opacity: .7;
+}
+
+form input{
+    background: #6f82de00;
+    border: 0;
+    width: 150px;
+    padding-left: 10px;
+}
+
+form input::placeholder { 
+    color: #DAE0FF;
+    opacity: .5;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* This removes the highlight when the input is clicked */
+
+input[type="search"], textarea {
+    border: none;
+    outline: none;
+}
+
+/* animation to move search bar up when clicked */
+.searchup {
+    top: 90%;
+    /* transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); */
+}
+
+.searchdown {
+    top: 25%;
+    /* transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); */
+}
+
+/* zoom in and out controls */
+
+#zoomcontrol {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 87px;
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+}
+
+#zoomcontrol div{
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFFFFF;
+    background: #C89C2A;
+    background: linear-gradient(35deg, rgba(145,113,31,1) 0%, rgba(200,156,42,1) 85%);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 3px 2px 8px 1px rgba(96, 96, 96, 0.34);
+}
+
+#zoomcontrol div:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#zoomcontrol p{
+    margin: 0px;
+    position: relative;
+    top: -11px;
+}
+
+/* huntboyer css and positioning */
+
+#huntboyer {
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+    position: absolute;
+    top: 1.5%;
+    left: 3%;
+}
+
+/* mishkas css & positioning*/
+
+#mishkas {
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+    position: absolute;
+    bottom: 13%;
+    left: 4%;
+}
+
+/* Brick Section Outline css */
+
+#bricks {
+    position: relative;
+    top: 5%;
+    left: -20%;
+    width: 375px;
+    height: 400px;
+    /* z-index: 1; */
+    margin: auto;
+    padding: 80px;
+    /* transform: scale(2.6); */
+}
+
+#bricks img {
+    height: 370px;
+    position: absolute;
+}
+
+/* make map draggable */
+
+.draggable { 
+    touch-action: none;
+    user-select: none;
+  }
+
+/* #sec1 {
+    transform: scale(2);
+} */
+
+/* This is the positioning for the triggers of the bricks */
+
+#trig1 {
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    width: 100px;
+    height: 73px;
+    /* background: #071872; */
+}
+
+#trig2 {
+    position: absolute;
+    top: 145px;
+    left: 55px;
+    width: 65px;
+    height: 25px;
+    /* background: #071872; */
+}
+
+#trig3 {
+    position: absolute;
+    top: 175px;
+    left: 27px;
+    width: 90px;
+    height: 48px;
+    /* background: #071872; */
+}
+
+#trig4 {
+    position: absolute;
+    top: 230px;
+    left: 55px;
+    width: 60px;
+    height: 35px;
+    /* background: #071872; */
+}
+
+#trig5 {
+    position: absolute;
+    top: 115px;
+    left: 250px;
+    width: 45px;
+    height: 35px;
+    /* background: #071872; */
+}
+
+#trig6 {
+    position: absolute;
+    top: 155px;
+    left: 250px;
+    width: 90px;
+    height: 58px;
+    /* background: #071872; */
+}
+
+#trig7 {
+    position: absolute;
+    top: 215px;
+    left: 245px;
+    width: 95px;
+    height: 45px;
+    /* background: #071872; */
+}
+
+#trig8 {
+    position: absolute;
+    top: 265px;
+    left: 120px;
+    width: 120px;
+    height: 75px;
+    /* background: #071872; */
+}
+
+/* This makes sure the map can scale without messing up the formatting */
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Seal CSS */
+#seal {
+    color: #D4D4D4;
+    font-weight: 900;
+    background:#ffffff;
+    padding-top: 20px;
+    border-radius: 50%;
+    height: 45px;
+    width: 70px;
+    text-align: center;
+    font-size: 1em;
+    position:absolute;
+    top: 220px;
+    left: 225px;
+    box-shadow: inset 3px 2px 30px -17px rgba(0,0,0,0.44);
+}
+
+/* Searching results CSS */
+
+.is-hidden{
+    display:none;
+}
+
+
+
+
+
+
+

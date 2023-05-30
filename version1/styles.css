@@ -68,6 +68,11 @@ form input::placeholder {
     font-size: 15px;
 }
 
+input[type="search"], textarea {
+    border: none;
+    outline: none;
+}
+
 /* zoom in and out controls */
 
 #zoomcontrol {
