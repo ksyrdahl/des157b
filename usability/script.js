@@ -158,6 +158,16 @@ dresbach.addEventListener('click', function(event){
     searchScreen.className = "searchup"; 
 })
 
+close.addEventListener ('touchstart', function (event) {
+    document.getElementById('overlay').className = 'hidden'; 
+})
+
+dresbach.addEventListener('touchstart', function(event){
+    console.log('I was clicked');
+    document.getElementById('overlay').className = 'showing';
+    searchScreen.className = "searchup"; 
+})
+
 
 
 
