@@ -188,7 +188,6 @@ input[type="search"], textarea {
     left: 135px;
     width: 100px;
     height: 73px;
-    background: #071872;
 }
 
 #trig2 {
@@ -197,7 +196,6 @@ input[type="search"], textarea {
     left: 135px;
     width: 65px;
     height: 25px;
-    background: #071872;
 }
 
 #trig3 {
@@ -206,7 +204,6 @@ input[type="search"], textarea {
     left: 107px;
     width: 90px;
     height: 48px;
-    background: #071872;
 }
 
 #trig4 {
@@ -215,7 +212,6 @@ input[type="search"], textarea {
     left: 135px;
     width: 60px;
     height: 35px;
-    background: #071872;
 }
 
 #trig5 {
@@ -224,7 +220,6 @@ input[type="search"], textarea {
     left: 330px;
     width: 45px;
     height: 35px;
-    background: #071872;
 }
 
 #trig6 {
@@ -233,7 +228,6 @@ input[type="search"], textarea {
     left: 330px;
     width: 90px;
     height: 58px;
-    background: #071872;
 }
 
 #trig7 {
@@ -242,7 +236,6 @@ input[type="search"], textarea {
     left: 325px;
     width: 95px;
     height: 45px;
-    background: #071872;
 }
 
 #trig8 {
@@ -251,7 +244,19 @@ input[type="search"], textarea {
     left: 200px;
     width: 120px;
     height: 75px;
-    background: #071872;
+}
+
+.trigger:hover{
+    cursor:pointer;
+}
+
+/* For the overlay of the brick section */
+
+#brickSection img{
+    background: rgba(255, 255, 255, 0.835);
+    /* width: 100vw;
+    height: 100vh; */
+    z-index: 2;
 }
 
 /* This makes sure the map can scale without messing up the formatting */
@@ -281,7 +286,11 @@ main {
 /* Searching results CSS */
 
 .is-hidden{
-    display:none;
+    display: none;
+}
+
+.is-showing{
+    display: block;
 }
 
 /* CSS for the search resposnses */
@@ -301,5 +310,79 @@ main {
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
+/* Brick name positions */
+#bricktrig8 div {
+    width: 5.5px;
+    height: 5px;
+    z-index: 2;
+    /* border: solid 1px yellow; */
+    border-radius: 1px;
+    filter: blur(.5px);
+}
+
+#dresbach-brick {
+    position: absolute;
+    top: 346px;
+    left: 201.5px;
+}
+
+/* styling for the overlay that says who donated the brick */
+#overlay {
+    width: 327px;
+    height: 111px;
+    border-radius:60px;
+    background: #C89C2A;
+    background: linear-gradient(35deg, rgba(145,113,31,1) 0%, rgba(200,156,42,1) 85%);
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    display: flex;
+    color: white;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+#overlay h1{
+ color: #C89C2A;
+ background: white;
+ border-radius: 50%;
+ padding: 15px;
+ padding-top: 30px;
+ margin-left: 10px;
+ font-size: 20px;
+ box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+#overlay p{
+    font-size: 15px;
+    margin: 0;
+    margin-top: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#overlay h2{
+    font-size: 23px;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+#close {
+    background: #C89C2A;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -6%;
+    left: 87%;
+    border: 0;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    z-index: 1; 
+    color: #ffffff; 
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
 
 

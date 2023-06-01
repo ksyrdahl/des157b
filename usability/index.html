@@ -40,14 +40,14 @@
 
             <section id="bricks" class="draggable">
                 <img src="images/back.svg" alt="background" id="back">
-                <img src="images/a.svg" alt="background" class="bsections" id="sec1">
-                <img src="images/b.svg" alt="background" class="bsections" id="sec2">
-                <img src="images/c.svg" alt="background" class="bsections" id="sec3">
-                <img src="images/d.svg" alt="background" class="bsections" id="sec4">
-                <img src="images/e.svg" alt="background" class="bsections" id="sec5">
-                <img src="images/f.svg" alt="background" class="bsections" id="sec6">
-                <img src="images/g.svg" alt="background" class="bsections" id="sec7">
-                <img src="images/h.svg" alt="background" class="bsections" id="sec8">
+                <img src="images/a.svg" alt="A section" class="bsections" id="sectrig1">
+                <img src="images/b.svg" alt="B section" class="bsections" id="sectrig2">
+                <img src="images/c.svg" alt="C section" class="bsections" id="sectrig3">
+                <img src="images/d.svg" alt="D section" class="bsections" id="sectrig4">
+                <img src="images/e.svg" alt="E section" class="bsections" id="sectrig5">
+                <img src="images/f.svg" alt="F section" class="bsections" id="sectrig6">
+                <img src="images/g.svg" alt="G section" class="bsections" id="sectrig7">
+                <img src="images/h.svg" alt="E section" class="bsections" id="sectrig8">
                 <div class="trigger" id="trig1"></div>
                 <div class="trigger" id="trig2"></div>
                 <div class="trigger" id="trig3"></div>
@@ -57,7 +57,23 @@
                 <div class="trigger" id="trig7"></div>
                 <div class="trigger" id="trig8"></div>
                 <p id="seal">seal</p>
+                <!-- This add the image of the brick section with individual bricks -->
+                <section id="brickSection" class="is-hidden">
+                    
+                </section>
+                <!-- This section is contains the brick div positions -->
+                    <section id="bricktrig8" class="is-hidden">
+                        <div id="dresbach-brick" class="individual"></div>
+                    </section>
             </section>
+            <div id="overlay" class="is-hidden">
+                <button id="close">x</button>
+                <h1>H-1:1</h1>
+                <div>
+                    <p>This brick was donated by...</p>
+                    <h2>William Dresbach</h2>
+                </div>
+            </div>
     </main>
     <!-- The footer is the search engingine. The search is at the bottom beecause it is intended for mobile and the top of a phone is harder to reach then on a desktop. -->
     <footer id="searchscreen" class="searchup">
@@ -132,7 +148,7 @@
                 <span class="is-hidden">Bates Family</span>
             </div>
 
-            <div class="box">
+            <div class="box" id="dresbach">
                 <p>William Dresbach</p>
                 <span class="is-hidden">Dresbach Family</span>
             </div>
