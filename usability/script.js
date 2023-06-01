@@ -149,12 +149,13 @@ const dresbach = document.getElementById('dresbach');
 const close = document.getElementById('close');
 
 close.addEventListener ('click', function (event) {
-    document.getElementById('overlay').className = 'is-hidden'; 
+    document.getElementById('overlay').className = 'hidden'; 
 })
 
 dresbach.addEventListener('click', function(event){
     console.log('I was clicked');
-    document.getElementById('overlay').className = 'is-showing'; 
+    document.getElementById('overlay').className = 'showing';
+    searchScreen.className = "searchup"; 
 })
 
 
