@@ -210,8 +210,8 @@ main section.switch {
 
 #development {
     width: 210px;
-    height: 440px;
-    margin-top: .5em;
+    height: 470px;
+    margin-top: 0;
 }
 
 a {
