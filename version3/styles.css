@@ -4,9 +4,19 @@ body{
     height: 100vh;
 }
 
-#lineConnect {
+#lineBottom {
     background: #C89C2A;
-    /* background: linear-gradient(162deg, rgba(52,72,177,1) 0%, rgba(111,129,222,1) 49%); */
+    width: 98vw;
+    left: 1%;
+    height: 5px;
+    position: absolute;
+    top: 5%;
+    opacity: .1;
+    border-radius: 25px;
+}
+
+#lineTop {
+    background: #C89C2A;
     width: 98vw;
     left: 1%;
     height: 5px;
