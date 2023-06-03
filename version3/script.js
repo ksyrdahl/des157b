@@ -171,5 +171,9 @@
         location.reload();
     });
 
+    document.getElementById('map').addEventListener("touchstart", function(){
+        location.reload();
+    });
+
 
 })()
