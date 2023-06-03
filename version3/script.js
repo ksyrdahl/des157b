@@ -166,5 +166,10 @@
         searchScreen.className = "searchup"; 
     })
 
+// back to home map
+    document.getElementById('map').addEventListener("click", function(){
+        location.reload();
+    });
+
 
 })()
