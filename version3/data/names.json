@@ -1,0 +1,68 @@
+[
+{
+	    "name": "Ben & Monti Reynolds",
+	    "location": "H:1-2",
+        "id": "reynolds",
+        "hidden": "none"
+    },
+{
+        "name": "Charles M. Rick Jr",
+        "location": "H:1-4",
+        "id": "rickjr",
+        "hidden": "Junior"
+    },
+{
+        "name": "Emil Mrak",
+        "location": "H:1-6",
+        "id": "mrak",
+        "hidden": "Mark"
+    },
+{
+        "name": "Hilda Goss",
+        "location": "H:1-8",
+        "id": "goss",
+        "hidden": "none"
+    },
+{
+        "name": "Jack Forbes",
+        "location": "H:1-10",
+        "id": "forbes",
+        "hidden": "none"
+    },
+{
+        "name": "Nora Sterling",
+        "location": "H:1-12",
+        "id": "sterling",
+        "hidden": "none"
+    },
+{
+        "name": "Plant & Dolcini Family",
+        "location": "H:1-14",
+        "id": "dolcini",
+        "hidden": "none"
+    },
+{
+        "name": "Richard Harris",
+        "location": "H:1-16",
+        "id": "harris",
+        "hidden": "Dick"
+    },
+{
+        "name": "Susan Annette Wilbur",
+        "location": "H:1-18",
+        "id": "wilbur",
+        "hidden": "none"
+    },
+{
+        "name": "Walter Bates",
+        "location": "H:1-20",
+        "id": "bates",
+        "hidden": "none"
+    },
+{
+        "name": "William Dresbach",
+        "location": "H:1-22",
+        "id": "dresbach",
+        "hidden": "none"
+    }
+]

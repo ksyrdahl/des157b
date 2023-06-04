@@ -10,7 +10,7 @@
     const mapScaleValue = .2;
     const mapScaleSec = .4;
 // Code for searching
-    const cards = document.querySelectorAll('.box')
+    const cards = document.querySelectorAll('.box');
 //A little delay for the search
     let typingTimer;               
     let typeInterval = 500;  
@@ -24,11 +24,89 @@
     const brickSection = document.getElementById('brickSection');
     const letterBricks = document.getElementById('bricktrig8');
     const bricks = document.getElementById('bricks');
-// This code highlights the bricks
+// This code brings up overlay for each fo the bricks
+
     const individuals = document.querySelectorAll('.individual');
-    const dresbach = document.getElementById('dresbach');
     const close = document.getElementById('close');
 
+
+
+    // JSON Code
+let globalData;
+    async function getData(){
+        const names = await fetch('data/names.json');
+        const data = await names.json();
+        const values = Object.values(data);
+        console.log(values);
+        document.querySelector('.searchinfo').innerHTML = outputHTML(values);
+
+        createEvents();
+    }
+
+    function outputHTML(data){
+        let html = '';
+        // console.log(eachEntry);
+        data.forEach( function(eachEntry){
+            html +=  `<div class="box">
+                        <p id="${eachEntry.id}">${eachEntry.name}</p>
+                        <span class="is-hidden">${eachEntry.hidden}</span> 
+                    </div>`;  
+        } );
+        return html;
+    } 
+
+    function createEvents(){
+        const buttons = document.querySelectorAll('.searchinfo');
+        //console.log(buttons) 
+    
+        for (const button of buttons){
+            button.addEventListener('click', function(event){
+                const id = event.target.id; 
+                console.log(id);
+                console.log('I was clicked');
+                document.getElementById('overlay').className = 'showing';
+                searchScreen.className = "searchup";
+                // updateInterface(id, globalData);
+            })
+        }
+    }
+
+    // function updateInterface(value, jsonData){
+    //     console.log(value);
+
+    //     // num = section + row + column
+    //     let num = '<h1>';
+    //     // text = name  of person
+    //     let text = '<h2>';
+    //     num += `${jsonData[value].location}`;
+    //     num += '</h1>';
+    //     text += `${jsonData[value].name}`;
+    //     text += '</h2>';
+        
+    //     // put json data in right location
+    //     document.querySelector('#tag2').innerHTML = num;
+    //     document.querySelector('#text').innerHTML = text;
+        
+    // }
+    
+    getData();
+
+
+// Brings up the overlay for each brick
+
+    // nameBox.addEventListener('click', function(event){
+    //     console.log('I was clicked');
+    //     document.getElementById('overlay').className = 'showing';
+    //     searchScreen.className = "searchup"; 
+    // })
+
+    close.addEventListener ('click', function (event) {
+        document.getElementById('overlay').className = 'hidden'; 
+    })
+
+    close.addEventListener ('touchstart', function (event) {
+        document.getElementById('overlay').className = 'hidden'; 
+    })
 
 
 // From interact library for dragable elements
@@ -177,16 +255,15 @@
             }
         })
         trigger.addEventListener('touchstart', function(event){
-            // console.log(event.target.id);
-            brickSection.innerHTML = `<img src="images/${event.target.id}.svg" id="single${event.target.id}">`;
+            const num = event.target.id;
+            console.log(num);
+            brickSection.innerHTML = `<img src="images/${event.target.id}.svg">`;
             console.log(brickSection.innerHTML);
             brickSection.className = 'is-showing';
             // console.log(brickSection.className);
             const bsection = document.getElementById(`sec${event.target.id}`);
             bsection.className = 'is-hidden';
             letterBricks.className = 'is-showing';
-            mapScale += mapScaleSec;
-            map.style.transform = `scale(${mapScale}`;
             if(num === "trig1") {
                 console.log('u pressed a');
                 bricks.style.top = '55%';
@@ -242,36 +319,28 @@
     })
 
 
-// This code highlights the bricks
+// Brings up the overlay for each brick
 
-    individuals.forEach(function(individual){
-        individual.addEventListener('click', function(event){
-            console.log(event.target.id);
-            // const specific = event.target.id;
-            // console.log(specific);
-            // specific.style.border = 'solid 1px yellow';
-        })
-    })
+    // individuals.forEach(function(individual){
+    //     individual.addEventListener('click', function(event){
+    //         console.log(event.target.id);
+    //         // const specific = event.target.id;
+    //         // console.log(specific);
+    //         // specific.style.border = 'solid 1px yellow';
+    //     })
+    // })
 
-    close.addEventListener ('click', function (event) {
-        document.getElementById('overlay').className = 'hidden'; 
-    })
+    // dresbach.addEventListener('click', function(event){
+    //     console.log('I was clicked');
+    //     document.getElementById('overlay').className = 'showing';
+    //     searchScreen.className = "searchup"; 
+    // })
 
-    dresbach.addEventListener('click', function(event){
-        console.log('I was clicked');
-        document.getElementById('overlay').className = 'showing';
-        searchScreen.className = "searchup"; 
-    })
-
-    close.addEventListener ('touchstart', function (event) {
-        document.getElementById('overlay').className = 'hidden'; 
-    })
-
-    dresbach.addEventListener('touchstart', function(event){
-        console.log('I was clicked');
-        document.getElementById('overlay').className = 'showing';
-        searchScreen.className = "searchup"; 
-    })
+    // dresbach.addEventListener('touchstart', function(event){
+    //     console.log('I was clicked');
+    //     document.getElementById('overlay').className = 'showing';
+    //     searchScreen.className = "searchup"; 
+    // })
 
 // back to home map
     document.getElementById('map').addEventListener("click", function(){
