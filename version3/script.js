@@ -9,8 +9,6 @@
     let mapScale = 1;
     const mapScaleValue = .2;
     const mapScaleSec = .4;
-// Code for searching
-    const cards = document.querySelectorAll('.box');
 //A little delay for the search
     let typingTimer;               
     let typeInterval = 500;  
@@ -26,19 +24,23 @@
     const bricks = document.getElementById('bricks');
 // This code brings up overlay for each fo the bricks
 
-    const individuals = document.querySelectorAll('.individual');
+    // const individuals = document.querySelectorAll('.individual');
     const close = document.getElementById('close');
 
 
 
-    // JSON Code
+// JSON Code
 let globalData;
     async function getData(){
         const names = await fetch('data/names.json');
         const data = await names.json();
-        const values = Object.values(data);
+        const names2 = await fetch('data/names2.json');
+        const data2 = await names2.json();
+        const values = Object.values(data2);
+        globalData = data2;
         console.log(values);
         document.querySelector('.searchinfo').innerHTML = outputHTML(values);
+        document.querySelector('#bricktrig8').innerHTML = output2HTML(values);
 
         createEvents();
     }
@@ -55,50 +57,88 @@ let globalData;
         return html;
     } 
 
+    function output2HTML(data){
+        let html = '';
+        // console.log(eachEntry);
+        data.forEach( function(eachEntry){
+            html +=  `<div id="${eachEntry.brick}" class="individual"></div>`;  
+        } );
+        return html;
+    } 
+
     function createEvents(){
         const buttons = document.querySelectorAll('.searchinfo');
+        const brickButtons = document.querySelectorAll('#bricktrig8');
         //console.log(buttons) 
     
         for (const button of buttons){
             button.addEventListener('click', function(event){
-                const id = event.target.id; 
+                const id = `${event.target.id}-brick`; 
                 console.log(id);
                 console.log('I was clicked');
                 document.getElementById('overlay').className = 'showing';
                 searchScreen.className = "searchup";
-                // updateInterface(id, globalData);
+                updateInterface(id, globalData); 
+            })
+            button.addEventListener('touchstart', function(event){
+                const id = `${event.target.id}-brick`; 
+                console.log(id);
+                console.log('I was clicked');
+                document.getElementById('overlay').className = 'showing';
+                searchScreen.className = "searchup";       
+                updateInterface(id, globalData);
+            })
+        }
+        for (const brickButton of brickButtons){
+            brickButton.addEventListener('click', function(event){
+                console.log('you clicked a brick');
+                const idBrick = event.target.id;
+                
+                // event.target.style.border = 'solid 1px yellow'; 
+                console.log(`idBrick:${idBrick}`);
+                document.getElementById('overlay').className = 'showing';
+                updateInterface(idBrick, globalData); 
+            })
+            brickButton.addEventListener('touchstart', function(event){
+                console.log('you clicked a brick');
+                const idBrick = event.target.id;
+                
+                // event.target.style.border = 'solid 1px yellow'; 
+                console.log(`idBrick:${idBrick}`);
+                document.getElementById('overlay').className = 'showing';
+                updateInterface(idBrick, globalData); 
             })
         }
     }
 
-    // function updateInterface(value, jsonData){
-    //     console.log(value);
+// Brings up the overlay for each brick
 
-    //     // num = section + row + column
-    //     let num = '<h1>';
-    //     // text = name  of person
-    //     let text = '<h2>';
-    //     num += `${jsonData[value].location}`;
-    //     num += '</h1>';
-    //     text += `${jsonData[value].name}`;
-    //     text += '</h2>';
+    function updateInterface(value, jsonData){
+        console.log(value);
+        let num = '';
+        let text = '';
+        // num = section + row + column
+        num += `${jsonData[value].location}`;
+        // text = name  of person
+        text += `${jsonData[value].name}`;
         
-    //     // put json data in right location
-    //     document.querySelector('#tag2').innerHTML = num;
-    //     document.querySelector('#text').innerHTML = text;
+        // put json data in right location
+        document.querySelector('#tag2').innerHTML = num;
+        document.querySelector('#text').innerHTML = text;
+                    
+        brickSection.innerHTML = `<img src="images/${jsonData[value].section}.svg">`;
+        console.log(brickSection.innerHTML);
+        brickSection.className = 'is-showing';
+        const bsection = document.getElementById(`sec${jsonData[value].section}`);
+        bsection.className = 'is-hidden';
+        letterBricks.className = 'is-showing'; 
         
-    // }
+        const pickedBrick = document.getElementById(`${jsonData[value].brick}`);
+        pickedBrick.style.border = 'solid 1px yellow';
+    }
     
     getData();
 
-
-// Brings up the overlay for each brick
-
-    // nameBox.addEventListener('click', function(event){
-    //     console.log('I was clicked');
-    //     document.getElementById('overlay').className = 'showing';
-    //     searchScreen.className = "searchup"; 
-    // })
 
     close.addEventListener ('click', function (event) {
         document.getElementById('overlay').className = 'hidden'; 
@@ -148,6 +188,8 @@ let globalData;
     minus.addEventListener("touchstart", decreaseMapScale);
 
 // Code for searching
+
+const cards = document.querySelectorAll('.box');
     
       function liveSearch() {
           const search_query = document.getElementById("searchbox").value;

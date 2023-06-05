@@ -1,68 +1,90 @@
 {
-    "reynolds" :{
+    "reynolds-brick" :{
 	    "name": "Ben & Monti Reynolds",
-	    "location": "H:1-2",
+	    "location": "H:1-22",
         "id": "reynolds",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "reynolds-brick"
     },
-    "rickjr" :{
+    "rickjr-brick" :{
         "name": "Charles M. Rick Jr",
-        "location": "H:1-4",
-        "id": "rickjr",
-        "hidden": "Junior"
-    },
-    "mrak" :{
-        "name": "Emil Mrak",
-        "location": "H:1-6",
-        "id": "mrak",
-        "hidden": "Mark"
-    },
-    "goss" :{
-        "name": "Hilda Goss",
-        "location": "H:1-8",
-        "id": "goss",
-        "hidden": "none"
-    },
-    "forbes" :{
-        "name": "Jack Forbes",
-        "location": "H:1-10",
-        "id": "forbes",
-        "hidden": "none"
-    },
-    "sterling" :{
-        "name": "Nora Sterling",
-        "location": "H:1-12",
-        "id": "sterling",
-        "hidden": "none"
-    },
-    "dolcini" :{
-        "name": "Plant & Dolcini Family",
         "location": "H:1-14",
-        "id": "dolcini",
-        "hidden": "none"
+        "id": "rickjr",
+        "hidden": "Junior",
+        "section": "trig8",
+        "brick": "rickjr-brick"
     },
-    "harris" :{
-        "name": "Richard Harris",
-        "location": "H:1-16",
-        "id": "harris",
-        "hidden": "Dick"
-    },
-    "wilbur" :{
-        "name": "Susan Annette Wilbur",
+    "mrak-brick" :{
+        "name": "Emil Mrak",
         "location": "H:1-18",
-        "id": "wilbur",
-        "hidden": "none"
+        "id": "mrak",
+        "hidden": "Mark",
+        "section": "trig8",
+        "brick": "mrak-brick"
     },
-    "bates" :{
-        "name": "Walter Bates",
+    "goss-brick" :{
+        "name": "Hilda Goss",
         "location": "H:1-20",
-        "id": "bates",
-        "hidden": "none"
+        "id": "goss",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "goss-brick"
     },
-    "dresbach" :{
+    "forbes-brick" :{
+        "name": "Jack Forbes",
+        "location": "H:1-2",
+        "id": "forbes",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "forbes-brick"
+    },
+    "sterling-brick" :{
+        "name": "Nora Sterling",
+        "location": "H:1-10",
+        "id": "sterling",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "sterling-brick"
+    },
+    "dolcini-brick" :{
+        "name": "Plant & Dolcini Family",
+        "location": "H:1-12",
+        "id": "dolcini",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dolcini-brick"
+    },
+    "harris-brick" :{
+        "name": "Richard Harris",
+        "location": "H:1-6",
+        "id": "harris",
+        "hidden": "Dick",
+        "section": "trig8",
+        "brick": "harris-brick"
+    },
+    "wilbur-brick" :{
+        "name": "Susan Annette Wilbur",
+        "location": "H:1-8",
+        "id": "wilbur",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "wilbur-brick"
+    },
+    "bates-brick" :{
+        "name": "Walter Bates",
+        "location": "H:1-4",
+        "id": "bates",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "bates-brick"
+    },
+    "dresbach-brick" :{
         "name": "William Dresbach",
-        "location": "H:1-22",
+        "location": "H:1-16",
         "id": "dresbach",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dresbach-brick"
     }
 }

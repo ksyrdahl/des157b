@@ -1,68 +1,90 @@
 [
 {
-	    "name": "Ben & Monti Reynolds",
-	    "location": "H:1-2",
+	    "name": "Bea & Monti Reynolds",
+	    "location": "H:1-22",
         "id": "reynolds",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "reynolds-brick"
     },
 {
         "name": "Charles M. Rick Jr",
-        "location": "H:1-4",
+        "location": "H:1-14",
         "id": "rickjr",
-        "hidden": "Junior"
+        "hidden": "Junior",
+        "section": "trig8",
+        "brick": "rickjr-brick"
     },
 {
         "name": "Emil Mrak",
-        "location": "H:1-6",
+        "location": "H:1-18",
         "id": "mrak",
-        "hidden": "Mark"
+        "hidden": "Mark",
+        "section": "trig8",
+        "brick": "mrak-brick"
     },
 {
         "name": "Hilda Goss",
-        "location": "H:1-8",
+        "location": "H:1-20",
         "id": "goss",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "goss-brick"
     },
 {
         "name": "Jack Forbes",
-        "location": "H:1-10",
+        "location": "H:1-2",
         "id": "forbes",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "forbes-brick"
     },
 {
         "name": "Nora Sterling",
-        "location": "H:1-12",
+        "location": "H:1-10",
         "id": "sterling",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "sterling-brick"
     },
 {
         "name": "Plant & Dolcini Family",
-        "location": "H:1-14",
+        "location": "H:1-12",
         "id": "dolcini",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dolcini-brick"
     },
 {
         "name": "Richard Harris",
-        "location": "H:1-16",
+        "location": "H:1-6",
         "id": "harris",
-        "hidden": "Dick"
+        "hidden": "Dick",
+        "section": "trig8",
+        "brick": "harris-brick"
     },
 {
         "name": "Susan Annette Wilbur",
-        "location": "H:1-18",
+        "location": "H:1-8",
         "id": "wilbur",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "wilbur-brick"
     },
 {
         "name": "Walter Bates",
-        "location": "H:1-20",
+        "location": "H:1-4",
         "id": "bates",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "bates-brick"
     },
 {
         "name": "William Dresbach",
-        "location": "H:1-22",
+        "location": "H:1-16",
         "id": "dresbach",
-        "hidden": "none"
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dresbach-brick"
     }
 ]
