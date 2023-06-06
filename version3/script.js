@@ -23,11 +23,7 @@
     const letterBricks = document.getElementById('bricktrig8');
     const bricks = document.getElementById('bricks');
 // This code brings up overlay for each fo the bricks
-
-    // const individuals = document.querySelectorAll('.individual');
     const close = document.getElementById('close');
-
-
 
 // JSON Code
 let globalData;
@@ -43,6 +39,12 @@ let globalData;
         document.querySelector('#bricktrig8').innerHTML = output2HTML(values);
 
         createEvents();
+        // enableSearch();
+        // searchInput.addEventListener('keyup', () => {
+        //     console.log('key up search');
+        //     clearTimeout(typingTimer);
+        //     typingTimer = setTimeout(liveSearch, typeInterval);
+        // });
     }
 
     function outputHTML(data){
@@ -131,8 +133,12 @@ let globalData;
         brickSection.className = 'is-showing';
         const bsection = document.getElementById(`sec${jsonData[value].section}`);
         bsection.className = 'is-hidden';
-        letterBricks.className = 'is-showing'; 
-        
+        letterBricks.className = 'is-showing';
+        const individuals = document.querySelectorAll('.individual');
+        console.log(individuals);
+        for (let j=0; j<individuals.length; j++){
+            individuals[j].style.border ='#dae0ff00';
+        }
         const pickedBrick = document.getElementById(`${jsonData[value].brick}`);
         pickedBrick.style.border = 'solid 1px yellow';
     }
@@ -189,9 +195,11 @@ let globalData;
 
 // Code for searching
 
-const cards = document.querySelectorAll('.box');
+
     
       function liveSearch() {
+        const cards = document.querySelectorAll('.box');
+        console.log(cards);
           const search_query = document.getElementById("searchbox").value;
           
           // Use innerText if all contents are visible
@@ -206,18 +214,22 @@ const cards = document.querySelectorAll('.box');
       }
     
       //A little delay
-      
-      searchInput.addEventListener('keyup', () => {
-          clearTimeout(typingTimer);
-          typingTimer = setTimeout(liveSearch, typeInterval);
-      });
+    //   function enableSearch(){
+            searchInput.addEventListener('keyup', () => {
+                console.log('key up search');
+                clearTimeout(typingTimer);
+                typingTimer = setTimeout(liveSearch, typeInterval);
+            });
 
-      searchInput.addEventListener('search', () => {
-          console.log('clicked x');
-          for (var i = 0; i < cards.length; i++) {
-                  cards[i].classList.remove("is-hidden");
-          }
-      });
+        searchInput.addEventListener('search', () => {
+            console.log('clicked x');
+            for (var i = 0; i < cards.length; i++) {
+                    cards[i].classList.remove("is-hidden");
+            }
+        });
+    //   }
+      
+
 
 // moves search up and down
 

@@ -100,6 +100,11 @@ input[type="search"], textarea {
     outline: none;
 }
 
+input[type="search"]{
+    color: white;
+    width: 80%;
+}
+
 /* animation to move search bar up when clicked */
 .searchup {
     top: 90%;
