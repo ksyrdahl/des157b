@@ -1,0 +1,106 @@
+/* CSS Resets */
+h1, h2, h3, h4, p, nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+img { max-width: 100%; display: block; }
+* { box-sizing: border-box;}
+
+/* end Resets */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(231, 226, 250);
+    color: rgb(31, 14, 89);
+    font-family: 'Nunito', sans-serif;
+}
+nav {
+    border-top: 2px solid rgb(31, 14, 89);
+    position:sticky;
+    top: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    background: rgb(31, 14, 89);
+    display: block;
+    color:rgb(252, 199, 101);
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+header, footer {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+section:nth-child(even){
+    background: rgb(220, 211, 252);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+h1, h2 {
+    margin-bottom: .5em;
+}
+
+p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+img {
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+#up {
+    font-weight: 900;
+    background: rgb(31, 14, 89);
+    border-radius: 25px;
+    width: 80px;
+    height: 20px; 
+    margin-top: 10px; 
+}
+
+#up a{
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 768px) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1; }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container{ margin: auto; }
+    nav ul {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .content { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}

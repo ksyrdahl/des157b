@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>UX/UI Case Study -Davis Cenntenial Seal - Brick Donnors</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+
+    <!-- add any google fonts you want to use -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+	
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+	
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>UX/UI Case Study - Davis Cenntenial Seal - Brick Donnors</h1>
+            <p>Kaelyn Syrdahl</p>
+            <address>&#107;&#097;&#115;&#121;&#114;&#100;&#097;&#104;&#108;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">overview</a></li>
+            <li><a href="#research">research</a></li>
+            <li><a href="#design">design</a></li>
+            <li><a href="#task">task</a></li>
+            <li><a href="#usability">usability</a></li>
+            <li><a href="#summary">summary</a></li>
+        </ul>
+    </nav>
+
+    <!--/ /-------- Overview Section --------/ /-->
+    <section id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <img src="images/overview.jpg">
+            <div class="content">
+                <p>This project is a responsive platform with an interactive map of the donated bricks surrounding the seal allowing donors to find the bricks that they donated. This project connects with the community aspect of the Davis Centennial Seal by showcasing the community members who contributed to the construction of the seal.</p>
+
+                <p>The primary goal of the project is to allow users to search for their name and be shown where their brick is located. The secondary goal is to provide an interactive map where users can click on certain bricks and see who else in the community has contributed to the bricks.</p>
+                    
+                <p>My target audience is long-time Daivs residents aged 40 to 70 years of age. They will have lived in Davis long enough to have decided to donate money to the construction of the monument and be given a brick. They still live in Davis and frequently pass by the Centennial Seal to go to Mishkas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UX Research Section --------/ /-->
+    <section id="research">
+        <div class="container">
+            <h2>Project Research</h2>
+            <div class="content">
+                <p>I conducted interviews of people from my target audience. In these interview I asked about their confidence with using technology and said they feel pretty confident which was surprising to me because they are from an older audience. However, they did say they prefer to not use technology most of the time. This made me realize that it is really important that I make the website simple and quick to use. </p>
+
+                <p>If I create something that is too complicated or has too many options they are more likely to give up on the website, then say someone who uses technology often and might prefer more options. I originally had planned to add extra information about each brick to the website, but decided to simplify it only display the name of who donate each brick so my target audience would be more likely to use the website.</p>
+
+                <img src="images/simple.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- App Design Section --------/ /-->
+    <section id="design">
+        <div class="container">
+            <h2>Visual Design</h2>
+            <div class="content">
+                <img src="images/change.jpg">
+                <p>From my target audience interviews, I also learned that the one thing that connected the brick donnors was that they all have a love for Davis. As a result, I tried to reflect Daivs in my color choices. I picked colors that were consistent with the City of Davis website, blue, green, and golden yellow. For my font choices I wanted something welcoming, but still professional so I picked Nuito because it is clean, but has rounded edges which can be seen as more welcoming.</p>
+
+                <p>One of the main changes I made from my original design was the map. I originally displayed all of the individual bricks in the map when the webpage was first opened. However, I received feedback that this was overwhelming. To make the map less overwhelming I started the design with blocked out sections for the bricks and when the user clicks on one of the sections, then the individual bricks appear.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Task Section --------/ /-->
+    <section id="task">
+        <div class="container">
+            <h2>Tasks For Users</h2>
+            <div class="content">
+                <div class="column">
+                    <p>Since my website is mostly made to be used for mobile I positioned all of the clickable buttons at the bottom of the page. This is because when users are holding the phone they hold it from the bottom so elements at the bottom are easier to reach. Most users are right handed so the easiest access will be on the right hand side. As a result I put the button I want them to click the most on the bottom right.</p>
+                </div>
+                <div>
+                    <img src="images/search.png">
+                </div>
+                <p>I added a search bar the bottom of the page to make user interactions easier. I could have created a seperate overlay where users could search for their name in alphabetical order. However, if I had done this there was a chance that the users would ahve given up before they found their name. It is known is psycology that easier you make interactions the more liekly they are to do something.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Usability Test Section --------/ /-->
+    <section id="usability">
+        <div class="container">
+            <h2>Usability Testing &amp; Further Development</h2>
+            <div class="content">
+                <p>While doing user testing I noticed was that I didn't have a way for users to return to the main map once they go to a section. So I added a button that would bring you back to the homescreen essentially. Then for the search bar I noticed that with both of my users they first go to the list of names in the search instead of using the search bar which was interesting. So I made sure the names were listed alphabetically incase they wanted to search there instead.</p>
+
+                <p>I also noticed that people are drawn to clicking on the Mishkas and Hunterboyer logo. I was worried about this because it does kind of look like a button. Then to solve this issue I lowered the opacity of these two elements so they blend in more to the background and look less like a clickable button.</p>
+
+                <img src="images/userchange.png">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Summary Section --------/ /-->
+    <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+            <div class="content">
+                <p>This entire project as a whole was big challlege for me and I knew it would be but i wanted to chanllenge myself. I think my strong suit with website design is definitely the illustrations that I add but I picked this project specifically becuase I knew there would be hardly any illustrations and would instead be very JavaScript heavy.</p>
+
+                <p>I learned so much about JavsScript and how to use JSON files with this project. I pushed myself to use JSON to populate the search bar and other parts of the HTML and I actually got it to work. Even though everything isn't as polished as it could be, I am still extremly proud of everything I acomplished in this project especially with the JavaScript.</p>
+
+                <p>This project is meant to be a stepping stone for someone else to continue working on, so it's ok that it is still a work in progress. I am looking forward to seeing how the next person alters my code and design to make it even better. </p>
+            </div>
+            <img src="images/project.jpg">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>UX/UI Case Study - Davis Cenntenial Seal - Brick Donnors</p>
+            <p>Kaelyn Syrdahl</p>
+            <address>&#107;&#097;&#115;&#121;&#114;&#100;&#097;&#104;&#108;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+            <p id="up"><a href="#top">---top---</i></a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
