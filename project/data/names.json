@@ -1,0 +1,101 @@
+[
+{
+	    "name": "Bea & Monti Reynolds",
+	    "location": "H:1-22",
+        "id": "reynolds",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "reynolds-brick",
+        "description": "DPNS Co-founder 1949 Jock, Eric, and Craig"
+    },
+{
+        "name": "Charles M. Rick Jr",
+        "location": "H:1-14",
+        "id": "rickjr",
+        "hidden": "Junior",
+        "section": "trig8",
+        "brick": "rickjr-brick",
+        "description": "World Authority on Tomato Genetics"
+    },
+{
+        "name": "Emil Mrak",
+        "location": "H:1-18",
+        "id": "mrak",
+        "hidden": "Mark",
+        "section": "trig8",
+        "brick": "mrak-brick",
+        "description": "Led Bike Friendly Campus Growth"
+    },
+{
+        "name": "Hilda Goss",
+        "location": "H:1-20",
+        "id": "goss",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "goss-brick",
+        "description": "The Woman Who Taught Children to Read"
+    },
+{
+        "name": "Jack Forbes",
+        "location": "H:1-2",
+        "id": "forbes",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "forbes-brick",
+        "description": "Native American Studies D-Q University"
+    },
+{
+        "name": "Nora Sterling",
+        "location": "H:1-10",
+        "id": "sterling",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "sterling-brick",
+        "description": "Champion DPNS & Early Childhood Education"
+    },
+{
+        "name": "Plant & Dolcini Family",
+        "location": "H:1-12",
+        "id": "dolcini",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dolcini-brick",
+        "description": ""
+    },
+{
+        "name": "Richard Dick Harris",
+        "location": "H:1-6",
+        "id": "harris",
+        "hidden": "Dick",
+        "section": "trig8",
+        "brick": "harris-brick",
+        "description": "Renowned Tree Expert Cavis City of Trees"
+    },
+{
+        "name": "Susan Annette Wilbur",
+        "location": "H:1-8",
+        "id": "wilbur",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "wilbur-brick",
+        "description": "Bachelor Girls Club President"
+    },
+{
+        "name": "Dr. Walter E. Bates",
+        "location": "H:1-4",
+        "id": "bates",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "bates-brick",
+        "description": "Boom Committee Chamber of Commerce"
+    },
+{
+        "name": "William Dresbach",
+        "location": "H:1-16",
+        "id": "dresbach",
+        "hidden": "none",
+        "section": "trig8",
+        "brick": "dresbach-brick",
+        "description": "Postmaster Solano Bill"
+    }
+]

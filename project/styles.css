@@ -1,0 +1,544 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#lineBottom {
+    background: #C89C2A;
+    width: 98vw;
+    left: 1%;
+    height: 5px;
+    position: absolute;
+    top: 5%;
+    opacity: .1;
+    border-radius: 25px;
+}
+
+#lineTop {
+    background: #C89C2A;
+    width: 98vw;
+    left: 1%;
+    height: 5px;
+    position: absolute;
+    bottom: 17%;
+    opacity: .2;
+    border-radius: 25px;
+}
+
+/* search bar in footer css */
+#searchline{
+    background: #071872;
+    background: linear-gradient(175deg, rgba(4,12,55,1) 0%, rgba(7,24,114,1) 49%);
+    width: 25%;
+    height: 3px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 25px;
+}
+
+#searchscreen {
+    box-sizing: border-box;
+    position: fixed;
+    padding: 20px;
+    padding-top: 10px;
+    background: #283A9A;
+    background: linear-gradient(35deg, rgb(14, 28, 96) 0%, rgba(40,58,154,1) 85%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 0px 15px 0px #727272;
+    z-index: 3;
+}
+
+.searchinfo {
+    overflow: scroll;
+    height: 65%;
+}
+
+#searchscreen form {
+    display: block;
+    width: 80%;
+    height: 29px;
+    margin: auto;
+    color: #DAE0FF;
+    background: #6F81DE;
+    background: linear-gradient(162deg, rgba(52,72,177,1) 0%, rgba(111,129,222,1) 49%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    box-shadow: inset 0px 12px 5px -7px rgba(0,0,0,0.38);
+}
+
+form label {
+    font-size: 22px;
+    position: relative;
+    top: 3px;
+    padding-left: 15px;
+    opacity: .7;
+}
+
+form input{
+    background: #6f82de00;
+    border: 0;
+    width: 150px;
+    padding-left: 10px;
+}
+
+form input::placeholder { 
+    color: #DAE0FF;
+    opacity: .5;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* This removes the highlight when the input is clicked */
+
+input[type="search"], textarea {
+    border: none;
+    outline: none;
+}
+
+input[type="search"]{
+    color: white;
+    width: 80%;
+}
+
+/* animation to move search bar up when clicked */
+.searchup {
+    top: 90%;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+.searchdown {
+    top: 25%;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+/* zoom in and out controls */
+
+#zoomcontrol {
+    display: flex;
+    position: absolute;
+    bottom: 14%;
+    right: 3%;
+    width: 100px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+    z-index: 2;
+}
+
+#zoomcontrol div{
+    font-size: 53px;
+    font-weight: 800;
+    color: #FFFFFF;
+    background: #C89C2A;
+    background: linear-gradient(35deg, rgba(145,113,31,1) 0%, rgba(200,156,42,1) 85%);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+    box-shadow: 3px 2px 8px 1px rgba(96, 96, 96, 0.34);
+}
+
+#zoomcontrol div:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#zoomcontrol p{
+    margin: 0px;
+    position: relative;
+    top: -11px;
+}
+
+/* huntboyer css and positioning */
+
+#huntboyer {
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+    position: absolute;
+    z-index: 2;
+    top: 1.5%;
+    right: 3%;
+    opacity: 0.5;
+}
+
+/* mishkas css & positioning*/
+
+#mishkas {
+    background: rgba(255, 255, 255, 0.679);
+    border-radius: 13px;
+    position: absolute;
+    top: 1.5%;
+    left: 3%;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+/* map buttton css & positioning*/
+
+#map {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    background: linear-gradient(35deg, rgba(40,58,154,1)  0%, rgb(106, 126, 226)85%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 2px 8px 1px rgba(96, 96, 96, 0.34);
+    position: absolute;
+    bottom: 12%;
+    left: 3%;
+    border: solid 3px #C89C2A;
+    z-index: 2;
+}
+
+#map p {
+    margin:0;
+    margin-top: 11px;
+}
+
+#map:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Brick Section Outline css */
+
+#bricks {
+    position: relative;
+    top: 2.5%;
+    left: -20%;
+    width: 375px;
+    height: 400px;
+    /* z-index: 1; */
+    margin: auto;
+    padding: 80px;
+    /* transform: scale(2.6); */
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+#bricks img {
+    height: 370px;
+    position: absolute;
+}
+
+/* make map draggable */
+
+.draggable { 
+    touch-action: none;
+    user-select: none;
+  }
+
+/* #sec1 {
+    transform: scale(2);
+} */
+
+/* This is the positioning for the triggers of the bricks */
+
+#trig1 {
+    position: absolute;
+    top: 145px;
+    left: 135px;
+    width: 100px;
+    height: 73px;
+}
+
+#trig2 {
+    position: absolute;
+    top: 225px;
+    left: 135px;
+    width: 65px;
+    height: 25px;
+}
+
+#trig3 {
+    position: absolute;
+    top: 255px;
+    left: 107px;
+    width: 90px;
+    height: 48px;
+}
+
+#trig4 {
+    position: absolute;
+    top: 310px;
+    left: 135px;
+    width: 60px;
+    height: 35px;
+}
+
+#trig5 {
+    position: absolute;
+    top: 195px;
+    left: 330px;
+    width: 45px;
+    height: 35px;
+}
+
+#trig6 {
+    position: absolute;
+    top: 235px;
+    left: 330px;
+    width: 90px;
+    height: 58px;
+}
+
+#trig7 {
+    position: absolute;
+    top:295px;
+    left: 325px;
+    width: 95px;
+    height: 45px;
+}
+
+#trig8 {
+    position: absolute;
+    top: 345px;
+    left: 200px;
+    width: 120px;
+    height: 75px;
+}
+
+.trigger:hover{
+    cursor:pointer;
+}
+
+/* For the overlay of the brick section */
+
+#brickSection img{
+    background: rgba(255, 255, 255, 0.835);
+    /* width: 100vw;
+    height: 100vh; */
+    z-index: 2;
+}
+
+/* This makes sure the map can scale without messing up the formatting */
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Seal CSS */
+#seal {
+    color: #D4D4D4;
+    font-weight: 900;
+    background:#ffffff;
+    padding-top: 20px;
+    border-radius: 50%;
+    height: 45px;
+    width: 70px;
+    text-align: center;
+    font-size: 1em;
+    position:absolute;
+    top: 220px;
+    left: 225px;
+    box-shadow: inset 3px 2px 30px -17px rgba(0,0,0,0.44);
+}
+
+/* Searching results CSS */
+
+.is-hidden{
+    display: none;
+}
+
+.is-showing{
+    display: block;
+}
+
+/* CSS for the search resposnses */
+
+.box p {
+    color: #DAE0FF;
+    width: 60%;
+    background: #071872;
+    font-size: 19px;
+    padding: 20px;
+    padding-left: 45px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 17px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+/* Brick name positions */
+#bricktrig8 div {
+    width: 5.5px;
+    height: 5px;
+    z-index: 2;
+    /* border: solid 1px yellow; */
+    border-radius: 1px;
+    filter: blur(.5px);
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+#forbes-brick {
+    top: 346px;
+    left: 201.5px;
+}
+
+#bates-brick {
+    top: 346px;
+    left: 213px;
+}
+
+#harris-brick {
+    top: 346px;
+    left: 224px;
+}
+
+#wilbur-brick {
+    top: 346px;
+    left: 235px;
+}
+
+#sterling-brick {
+    top: 346px;
+    left: 246px;
+}
+
+#dolcini-brick {
+    top: 346px;
+    left: 257px;
+}
+
+#rickjr-brick {
+    top: 346px;
+    left: 268px;
+}
+
+#dresbach-brick {
+    top: 346px;
+    left: 279px;
+}
+
+#mrak-brick {
+    top: 346px;
+    left: 290px;
+}
+
+#goss-brick {
+    top: 346px;
+    left: 301px;
+}
+
+#reynolds-brick {
+    top: 346px;
+    left: 312px;
+}
+
+/* styling for the overlay that says who donated the brick */
+#overlay {
+    width: 327px;
+    height: 250px;
+    border-radius:60px;
+    background: #C89C2A;
+    background: linear-gradient(35deg, rgba(145,113,31,1) 0%, rgba(200,156,42,1) 85%);
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    display: flex;
+    color: white;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    z-index: 3;
+    transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+
+#letter {
+    border-radius: 50%;
+    background: #C89C2A;
+    background: linear-gradient(35deg, rgba(145,113,31,1) 0%, rgba(200,156,42,1) 85%);
+    padding: 15px;
+    width: 95px;
+    height: 95px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+#overlay h1{
+    color: #C89C2A;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+    padding: 10px;
+    width: 85px;
+    height: 55px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+#overlay p{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+#innertext{
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    width: 255px;
+}
+
+#overlay h2{
+    font-size: 35px;
+    margin: 0;
+    font-weight: 900;
+}
+
+#close {
+    background: #C89C2A;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -3%;
+    left: 87%;
+    border: 0;
+    align-items: center;
+    font-weight: 800;
+    z-index: 1; 
+    color: #ffffff; 
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.hidden {
+    opacity: 0;
+    /* display: none; */
+}
+
+.showing {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #bricks{
+        transform: scale(2);
+        left: 2%;
+        top: 10%;
+    }
+
+}
+
