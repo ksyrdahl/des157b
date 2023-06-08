@@ -298,6 +298,7 @@ let globalData;
     listeners: {
         start (event) {
         console.log(event.type, event.target)
+        map.style.transition = 'none';
         },
         move (event) {
         position.x += event.dx
@@ -314,11 +315,13 @@ let globalData;
     function increaseMapScale (){
         mapScale += mapScaleValue;
         map.style.transform = `scale(${mapScale}`;
+        map.style.transition = 'all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335)';
     }
     // scale down
     function decreaseMapScale (){
         mapScale -= mapScaleValue;
         map.style.transform = `scale(${mapScale}`;
+        map.style.transition = 'all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335)';
     }
     // scale up
     let plus = document.getElementById("increase");
@@ -428,7 +431,7 @@ let globalData;
         })
         
     })
-// Zooms into each section on click in mobile view
+// Zooms into each section on click in mobile
     function zoomMobile (num){
         if(num === "trig1") {
             console.log('u pressed a');
