@@ -1,3 +1,7 @@
+:root {
+    --page-height: 100vh;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
     width: 100vw;
@@ -524,12 +528,12 @@ main {
 }
 
 .hidden {
-    opacity: 0;
+    display: none !important;
     /* display: none; */
 }
 
 .showing {
-    opacity: 1;
+    display: block;
 }
 
 @media only screen and (min-width: 600px) {

@@ -22,9 +22,11 @@
 </head>
 <body>
     <main>
-        <!-- These are the zoom controls that allow users to scale in and out of the map. The div keeps them contained so theey stay together -->
+        <!-- just for styling -->
         <div id="lineBottom"></div>
         <div id="lineTop"></div>
+        <!-- controls to scale up and down the brick map -->
+        <!-- These are the zoom controls that allow users to scale in and out of the map. The div keeps them contained so theey stay together -->
         <div id="zoomcontrol">
             <div id="decrease">
                 <p>-</p>
@@ -33,6 +35,7 @@
                 <p>+</p>
             </div>
         </div>
+        <!-- button to bring user back to homescreen. It reloads the page -->
         <div id="map">
             <p><i class="fas fa-map"></i></p>
         </div>
@@ -41,7 +44,7 @@
         <img src="images/mishkas.svg" alt="Mishkas" width="61" height="58" id="mishkas">
         <!-- This section positions the bricks in sections then when they click on a section it takes them to that section -->
         <!-- <div class="draggable"></div> -->
-
+            <!-- contain the entire map and makes it draggable -->
             <section id="bricks" class="draggable">
                 <img src="images/back.svg" alt="background" id="back">
                 <img src="images/a.svg" alt="A section" class="bsections" id="sectrig1">
@@ -52,6 +55,7 @@
                 <img src="images/f.svg" alt="F section" class="bsections" id="sectrig6">
                 <img src="images/g.svg" alt="G section" class="bsections" id="sectrig7">
                 <img src="images/h.svg" alt="E section" class="bsections" id="sectrig8">
+                <!-- adds a trigger over the image section -->
                 <div class="trigger" id="trig1"></div>
                 <div class="trigger" id="trig2"></div>
                 <div class="trigger" id="trig3"></div>
@@ -67,27 +71,23 @@
                 </section>
                 <!-- This section is contains the brick div positions -->
                     <section id="bricktrig8" class="is-hidden">
-                        <!-- <div id="forbes-brick" class="individual"></div>
-                        <div id="bates-brick" class="individual"></div>
-                        <div id="harris-brick" class="individual"></div>
-                        <div id="wilbur-brick" class="individual"></div>
-                        <div id="sterling-brick" class="individual"></div>
-                        <div id="dolcini-brick" class="individual"></div>
-                        <div id="rickjr-brick" class="individual"></div>
-                        <div id="dresbach-brick" class="individual"></div>
-                        <div id="mrak-brick" class="individual"></div>
-                        <div id="goss-brick" class="individual"></div>
-                        <div id="reynolds-brick" class="individual"></div> -->
+                        
                     </section>
             </section>
+            <!-- overlay from brick information -->
             <div id="overlay" class="hidden">
+                <!-- button to close overlay -->
                 <button id="close">x</button>
+                <!-- outline in orange-->
                 <div id="letter">
+                    <!-- spot to add brick section, row, and column -->
                     <h1 id="tag2"></h1>
                 </div>
+                <!-- text on brick -->
                 <div id="innertext">
-                    <!-- <p>This brick was donated by...</p> -->
+                    <!-- spot for name -->
                     <h2 id="text"></h2>
+                    <!-- spot for further text on brick -->
                     <p id="describe"></p>
                 </div>
             </div>
