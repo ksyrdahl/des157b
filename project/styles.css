@@ -513,7 +513,7 @@ main {
 #close {
     background: #C89C2A;
     font-size: 30px;
-    border-radius: 50%;
+    border-radius: 25px;
     width: 40px;
     height: 40px;
     position: absolute;
